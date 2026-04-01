@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="神田屋日式家庭料理 - 花蓮道地日式家庭料理專門店。招牌豬肉漢堡排多汁鮮甜，玉子燒厚實濕潤，親子丼生鮮美味。每週三公休，午餐 11:30-14:00，晚餐 17:30-20:30。電話訂位：+886 3 835 2055。">
+    <meta name="keywords" content="花蓮日式料理, 日式家庭料理, 漢堡排定食, 丼飯, 花蓮美食, 日本料理">
+    <meta name="author" content="神田屋日式家庭料理">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="zh-Hant">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="神田屋日式家庭料理 - 花蓮道地日式家庭料理">
+    <meta property="og:description" content="招牌豬肉漢堡排多汁鮮甜，玉子燒厚實濕潤。花蓮最溫暖的日式家庭料理專門店。">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://kandaya-hualien.manus.space/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=1200&h=630&fit=crop">
+    <meta property="og:locale" content="zh_TW">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="神田屋日式家庭料理 - 花蓮道地日式家庭料理">
+    <meta name="twitter:description" content="招牌豬肉漢堡排多汁鮮甜，玉子燒厚實濕潤。花蓮最溫暖的日式家庭料理專門店。">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kandaya-hualien.manus.space/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-family='serif'>🍱</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        'kandaya-cream': '#FBF8F3',
+                        'kandaya-warm': '#D4A574',
+                        'kandaya-dark': '#2C2C2C',
+                        'kandaya-accent': '#C85A3A',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "神田屋日式家庭料理",
+        "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800",
+        "description": "花蓮道地日式家庭料理專門店，提供招牌豬肉漢堡排定食、玉子燒定食、丼飯等日本家庭料理。",
+        "telephone": "+886-3-835-2055",
+        "url": "https://kandaya-hualien.manus.space/",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "林森路 407 號",
+            "addressLocality": "花蓮市",
+            "addressRegion": "花蓮縣",
+            "postalCode": "970",
+            "addressCountry": "TW"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 23.9824838,
+            "longitude": 121.606776
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "11:30",
+                "closes": "14:00",
+                "description": "午餐時間"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "17:30",
+                "closes": "20:30",
+                "description": "晚餐時間"
+            }
+        ],
+        "priceRange": "NT$200-400",
+        "servesCuisine": "Japanese",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "878"
+        },
+        "menu": {
+            "@type": "Menu",
+            "hasMenuSection": [
+                {
+                    "@type": "MenuSection",
+                    "name": "定食",
+                    "hasMenuItem": [
+                        {
+                            "@type": "MenuItem",
+                            "name": "豬肉漢堡排定食",
+                            "description": "招牌豬肉漢堡排，多汁厚實，搭配白飯與味噌湯",
+                            "price": "260"
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "玉子燒定食",
+                            "description": "厚實濕潤的玉子燒，有層次的口感",
+                            "price": "240"
+                        }
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "丼飯",
+                    "hasMenuItem": [
+                        {
+                            "@type": "MenuItem",
+                            "name": "鮭魚親子丼",
+                            "description": "新鮮鮭魚與鮭魚卵的完美組合",
+                            "price": "350"
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "山藥鮪魚丼",
+                            "description": "新鮮生鮪魚搭配山藥",
+                            "price": "360"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <title>神田屋日式家庭料理 - 花蓮道地日式家庭料理 | 漢堡排定食專門店</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            color: #2C2C2C;
+            background-color: #FBF8F3;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            color: #2C2C2C;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #2C2C2C;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2C2C2C;
+        }
+        
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(135deg, #D4A574 0%, #C85A3A 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="50" r="1.5" fill="rgba(255,255,255,0.08)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            color: white;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            animation: fadeInDown 0.8s ease-out;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: white;
+            color: #C85A3A;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* About Section */
+        .about {
+            background-color: #FBF8F3;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Services Grid */
+        .services {
+            background-color: white;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background-color: #FBF8F3;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .service-card-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #D4A574 0%, #C85A3A 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            overflow: hidden;
+        }
+        
+        .service-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .service-card-content {
+            padding: 1.5rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #2C2C2C;
+        }
+        
+        .service-card p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 0;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background-color: #FBF8F3;
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-left: 4px solid #C85A3A;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #2C2C2C;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question::after {
+            content: '▼';
+            font-size: 0.8rem;
+            color: #C85A3A;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            color: #555;
+            line-height: 1.8;
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: white;
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            background-color: #FBF8F3;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        
+        .contact-info-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #E0D5C7;
+        }
+        
+        .contact-info-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .contact-label {
+            font-weight: 600;
+            color: #C85A3A;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-value {
+            font-size: 1.1rem;
+            color: #2C2C2C;
+        }
+        
+        .contact-value a {
+            color: #C85A3A;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-value a:hover {
+            color: #D4A574;
+        }
+        
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            height: 400px;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2C2C2C;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.95rem;
+        }
+        
+        footer a {
+            color: #D4A574;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: white;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            section {
+                padding: 3rem 1rem;
+            }
+            
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>神田屋日式家庭料理</h1>
+            <p>花蓮最溫暖的日式家庭料理專門店</p>
+            <p style="font-size: 1.1rem; margin-top: 1rem;">招牌豬肉漢堡排多汁鮮甜 | 玉子燒厚實濕潤 | 親子丼生鮮美味</p>
+            <a href="#contact" class="cta-button">立即訂位</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <main>
+        <section class="about" id="about">
+            <div class="container">
+                <h2>關於我們</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>神田屋日式家庭料理秉持著「用雙手傳遞有溫度與信念的日式飲食文化」的理念，在花蓮為在地民眾與遠道而來的旅客提供最道地的日本家庭料理。</p>
+                        <p>我們堅持選用優質食材，從各式油品（橄欖油、玄米油、芝麻油）到漢堡排使用的奶油，甚至連店內使用的鹽都是玫瑰鹽。每一道料理都承載著我們對日本飲食文化的尊重與對顧客的關懷。</p>
+                        <p>在神田屋，您不只是品嚐美食，更是體驗一份溫暖的家庭感受。無論是招牌豬肉漢堡排的多汁鮮甜，或是玉子燒的厚實濕潤，每一口都能感受到我們的用心。</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&h=500&fit=crop" alt="神田屋日式家庭料理店內環境，溫暖的木質調裝潢，展現日式家庭料理的溫馨氛圍">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <h2>招牌菜色</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=200&fit=crop" alt="豬肉漢堡排定食，厚實多汁的漢堡排搭配白飯與味噌湯">
+                        </div>
+                        <div class="service-card-content">
+                            <h3>豬肉漢堡排定食</h3>
+                            <p>招牌必點！厚實飽滿的豬肉漢堡排，多汁鮮甜，搭配白飯與味噌湯。NT$260</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=300&h=200&fit=crop" alt="玉子燒定食，厚實濕潤的玉子燒，有層次的口感">
+                        </div>
+                        <div class="service-card-content">
+                            <h3>玉子燒定食</h3>
+                            <p>厚實濕潤的玉子燒，內層濕潤有層次，搭配白飯與味噌湯。NT$240</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=300&h=200&fit=crop" alt="鮭魚親子丼，新鮮鮭魚與鮭魚卵的完美組合">
+                        </div>
+                        <div class="service-card-content">
+                            <h3>鮭魚親子丼</h3>
+                            <p>新鮮鮭魚與鮭魚卵的完美組合，入口即化的鮮美滋味。NT$350</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=200&fit=crop" alt="山藥鮪魚丼，新鮮生鮪魚搭配山藥的獨特組合">
+                        </div>
+                        <div class="service-card-content">
+                            <h3>山藥鮪魚丼</h3>
+                            <p>新鮮生鮪魚搭配山藥，獨特的口感與營養價值兼具。NT$360</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=300&h=200&fit=crop" alt="烤鯖魚定食，新鮮鯖魚烤至金黃香脆">
+                        </div>
+                        <div class="service-card-content">
+                            <h3>烤鯖魚定食</h3>
+                            <p>新鮮鯖魚烤至金黃香脆，肉質鮮嫩，搭配白飯與味噌湯。NT$280</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=200&fit=crop" alt="特製香魚一夜干定食，日本傳統風味">
+                        </div>
+                        <div class="service-card-content">
+                            <h3>特製香魚一夜干定食</h3>
+                            <p>日本傳統風味，新鮮香魚經過一夜干製，香氣十足。NT$320</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2>常見問題</h2>
+                <div style="margin-top: 2rem;">
+                    <div class="faq-item active">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>漢堡排為什麼這麼多汁？有什麼特別的製作方法嗎？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>神田屋的漢堡排採用純豬肉製作，選用新鮮豬肉搭配講究的奶油與調味料。每份漢堡排都是現點現做，師傅在廚房用心烹飪，確保每一份都能保持最佳的肉汁與口感。我們堅持不使用冷凍漢堡排，而是以最新鮮的食材現場製作，這就是為什麼神田屋的漢堡排能夠多汁鮮甜。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>需要提前預約嗎？用餐時間大約多長？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>我們強烈建議提前預約，特別是在用餐尖峰時段（午餐 12:00-13:30、晚餐 18:00-19:30）。由於廚房人手有限，提前預約可以確保您不會失望。您可以撥打 +886 3 835 2055 進行預約。一般用餐時間約 60-90 分鐘，但如果廚房較忙碌，可能需要多等待一些時間。我們建議您在預約時詢問預計等待時間。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>有外帶或外送服務嗎？可以在 Uber Eats 上訂餐嗎？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>是的，神田屋提供外帶、外送與內用三種服務方式。我們在 Uber Eats 上有登錄，您可以直接透過 Uber Eats 應用程式訂餐。此外，您也可以直接致電 +886 3 835 2055 預約外帶或外送。建議先電話預約以確保餐點品質與準時送達。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>聯絡資訊與位置</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-label">📍 地址</div>
+                            <div class="contact-value">花蓮縣花蓮市林森路 407 號</div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-label">📞 電話</div>
+                            <div class="contact-value"><a href="tel:+886-3-835-2055">+886 3 835 2055</a></div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-label">🕐 營業時間</div>
+                            <div class="contact-value">
+                                <div>午餐：11:30-14:00（用餐到 14:30）</div>
+                                <div>晚餐：17:30-20:30（用餐到 21:30）</div>
+                                <div style="margin-top: 0.5rem; color: #C85A3A;">每週三公休</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-label">💰 價格範圍</div>
+                            <div class="contact-value">NT$200–400 per person</div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-label">🍽️ 服務方式</div>
+                            <div class="contact-value">內用、外帶、外送</div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.8391234567!2d121.606776!3d23.9824838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34689fc7466863f5%3A0xa3f0c8851dd21670!2z56iL55WM5bGV5aSW5qiT!5e0!3m2!1szh-TW!2stw!4v1704067200000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 神田屋日式家庭料理 | Web Design by <a href="https://page5888.github.io/page5888/" target="_blank" rel="noopener noreferrer">花蓮瓊瑤打字行</a></p>
+    </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
